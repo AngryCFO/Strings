@@ -10,11 +10,7 @@ public class StatsService {
     }
 
     public int averageSumSales(long[] sales) {
-        int averageSum = 0;
-        for (long ignored : sales) {
-            averageSum = (sumSales(sales) / 12);
-        }
-        return averageSum;
+        return sumSales(sales) / sales.length;
     }
 
     public int maxSales(long[] sales) {
